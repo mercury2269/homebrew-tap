@@ -2,24 +2,24 @@
 class Sqsmover < Formula
   desc "AWS SQS Message mover."
   homepage "https://github.com/mercury2269/sqsmover"
-  version "0.3.12"
+  version "0.3.13"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/mercury2269/sqsmover/releases/download/v0.3.12/sqsmover_Darwin_x86_64.tar.gz"
-    sha256 "4cdca90eb8291c17fc79645e008c7314edb19d60e8a86eb6b881f62e4cbd59d8"
+    url "https://github.com/mercury2269/sqsmover/releases/download/v0.3.13/sqsmover_Darwin_x86_64.tar.gz"
+    sha256 "6df91157f07cba3fe71b562ca14d700b92c0a27d2d12de3cc5acbea0b04a7b3a"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/mercury2269/sqsmover/releases/download/v0.3.12/sqsmover_Linux_x86_64.tar.gz"
-      sha256 "14dbb0b5043d43016e6e0d9e7186d97f0b07462dfae95dac7ba479c8a1346e02"
+      url "https://github.com/mercury2269/sqsmover/releases/download/v0.3.13/sqsmover_Linux_x86_64.tar.gz"
+      sha256 "2790a8c18b83b70c042e1ba966d8f1eb50d3c2ab1ffb0315e5976045e8305523"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mercury2269/sqsmover/releases/download/v0.3.12/sqsmover_Linux_arm64.tar.gz"
-        sha256 "6f56f4d71d660dbcac32a547c0d66c96cbf908d014c7ed06ed86fea53e127452"
+        url "https://github.com/mercury2269/sqsmover/releases/download/v0.3.13/sqsmover_Linux_arm64.tar.gz"
+        sha256 "45d54e9fffffc73d2893bf673ac65631f001834d3c2fbe443973e0cb0c773beb"
       else
-        url "https://github.com/mercury2269/sqsmover/releases/download/v0.3.12/sqsmover_Linux_armv6.tar.gz"
-        sha256 "3b43fa75b1c991e7d70d0b6097b8e3b3f2f2b9ad4fe2ce389ae147c01fcd030e"
+        url "https://github.com/mercury2269/sqsmover/releases/download/v0.3.13/sqsmover_Linux_armv6.tar.gz"
+        sha256 "fb3596c4b9ed10af63d86cad6e4370c6f4ef1adcdb68e75906b3e7845b75eeda"
       end
     end
   end
